@@ -3,28 +3,21 @@
 <head>
 <title>Research Study</title>
 <style>
-  body { text-align: center; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
-  h1 { color: #333; }
-  p { color: #555; }
-  #avatar-container {
-    width: 100%;
-    max-width: 800px;
-    height: 600px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
+  body { text-align: center; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 40px; background-color: #f4f4f9; }
+  .step {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
   }
-  #avatar-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  #survey-link {
+  h1, h2 { color: #333; }
+  p { color: #555; font-size: 1.1em; }
+  .action-link {
     display: inline-block;
-    padding: 15px 25px;
-    margin-top: 20px;
+    padding: 15px 30px;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -33,23 +26,31 @@
     border-radius: 8px;
     transition: background-color 0.3s;
   }
-  #survey-link:hover {
+  .action-link:hover {
     background-color: #0056b3;
   }
 </style>
 </head>
 <body>
 
-  <h1>Research Study</h1>
-  <p>Please interact with Sophia below, then proceed to the survey.</p>
+  <h1>Research Study Instructions</h1>
+  <p>Please complete the following two steps in order.</p>
 
-  <div id="avatar-container">
-    <iframe id="avatar-iframe" src="https://workforce.soulmachines.com/assistant?t=81a8ff93-4c0a-476d-973b-cd94a77ce55b"></iframe>
+  <div class="step">
+    <h2>Step 1: Interact with Sophia</h2>
+    <p>Click the link below to have a brief, interactive conversation with our AI assistant, Sophia. When you are finished, close that tab and return to this page for Step 2.</p>
+    <a href="https://workforce.soulmachines.com/assistant?t=81a8ff93-4c0a-476d-973b-cd94a77ce55b" target="_blank" class="action-link">
+      Open Interaction with Sophia
+    </a>
   </div>
 
-  <a href="https://brightonbusiness.co1.qualtrics.com/jfe/form/SV_esnnJzDtKhiAii2" target="_blank" id="survey-link">
-    Click Here to Start the Survey
-  </a>
+  <div class="step">
+    <h2>Step 2: Complete the Survey</h2>
+    <p>After you have finished the interaction with Sophia, please click the link below to complete the follow-up survey.</p>
+    <a href="https://brightonbusiness.co1.qualtrics.com/jfe/form/SV_esnnJzDtKhiAii2" target="_blank" class="action-link">
+      Proceed to Survey
+    </a>
+  </div>
 
 </body>
 </html>
